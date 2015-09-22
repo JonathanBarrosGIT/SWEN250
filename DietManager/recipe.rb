@@ -12,7 +12,7 @@ class Recipe
   def initialize(name, ingredients)
     @fullCalories = 0
     @name = name
-    @ingredients = ingredients #Array in the following format: [[Name,calorie,amount],[Name1,calorie,amount]]
+    @ingredients = ingredients
   end
 
   public
@@ -32,8 +32,7 @@ class Recipe
     @fullCalories
   end
 
-  def printIngredients    
-    #This function will iterate through this array and print the ingredients as the required format
+  def printIngredients
     @ingredients.each_index do |i|
       subArray = @ingredients[i]
       subArray.each_index do |j|

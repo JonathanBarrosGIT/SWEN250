@@ -40,16 +40,63 @@ class FoodDatabase
     end
   end
 
+  #This method look for the given name within the two lists (food and recipes) and print their information if found.
+  def printByName(name)
+    #Count variable created to make sure if any food or recipe with the given name has been found
+    count = 0
+
+    @food_list.each do |value|
+      if value.name == name
+        puts value.name + ' ' + value.calories
+        count += 1
+      end
+    end
+
+    @recipe_list.each do |value|
+      if value.name == name
+        puts value.name + ' ' + "#{value.printFullCalories}"
+        print value.printIngredients
+        count += 1
+      end
+    end
+    if count == 0
+      puts 'There is no such food or recipe in the database'
+    end
+  end
+
+  # Class very similar to the previous one once the output is exactly the same.
+  # However, this class looks for the prefix in the beginning of either food or recipe
+  def findByPrefix(prefix)
+    #Count variable created to make sure if any food or recipe with the given name has been found
+    count = 0
+    @food_list.each do |value|
+      if value.name.downcase.start_with? prefix.downcase
+        puts value.name + ' ' + value.calories
+        count += 1
+      end
+    end
+
+    @recipe_list.each do |value|
+      if value.name.downcase.start_with? prefix.downcase
+        puts value.name + ' ' + "#{value.printFullCalories}"
+        print value.printIngredients
+        count += 1
+      end
+    end
+    if count == 0
+      puts 'There is no such food or recipe in the database'
+    end
+  end
+
   def to_s
     @food_list.each do |value|
-      puts value.name + " " + value.calories
+      puts value.name + ' ' + value.calories
     end
 
     print "\n"
 
     recipe_list.each do |value|
-      #puts value.name + "\n" + "#{value.ingredients}"
-      puts value.name + " " + "#{value.printFullCalories}"
+      puts value.name + ' ' + "#{value.printFullCalories}"
       value.printIngredients
     end
   end

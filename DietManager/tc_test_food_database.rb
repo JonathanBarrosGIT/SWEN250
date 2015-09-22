@@ -22,7 +22,7 @@ class TestFoodDatabase < Test::Unit::TestCase
 
   def test_addFood_method
     #This one is supposed to work
-    assert_equal(67, @fDataBase.getCalories("Orange (medium)"))
+    assert_equal(67, @fDataBase.getCalories("Orange"))
     #This one is supposed to fail
     assert_equal(70, @fDataBase.getCalories("Bread slice"))
   end
@@ -33,8 +33,8 @@ class TestFoodDatabase < Test::Unit::TestCase
   #The first test is supposed to work once the name is correct
   #The second test is supposed to fail once the name obviously is not the same that calories
   def test_accessors
-    assert_equal("Orange (medium)", @fDataBase.food_list[0].name)
-    assert_equal("Orange (medium)", @fDataBase.food_list[0].calories)
+    assert_equal("Orange", @fDataBase.food_list[0].name)
+    assert_equal("Orange", @fDataBase.food_list[0].calories)
   end
 
 end

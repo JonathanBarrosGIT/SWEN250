@@ -20,12 +20,16 @@ of the inexperience with the language.
 
 ================================================================
 Level 2 - Print & Find - Start
-Estimated Time	HH MM
-Plan for this level:
+Estimated Time	03 00
+Plan for this level: Once the class with the database was created and handled, this level would be simpler. So the plan
+for this level was to create the methods within the class FoodDatabase "food_db.rb" to perform the commands. Another was to
+change the menu to receive more complex commands.
 
 Level 2  - Print & Find - Complete
-Actual Time	HH MM
-Lessons learned, problems encountered, obstacles overcome, etc.
+Actual Time	02 00
+The development of this level was very much easier and faster than the previous levels. I believe that was because of two reasons:
+The assignments for this level was simplier compared to the construction of the previous one. And, the knowledge upon the language
+increased a lot more compared to when I've begun coding the project.
 
 ================================================================
 Level 3 - Database Update - Start
