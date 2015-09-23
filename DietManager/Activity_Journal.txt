@@ -21,24 +21,22 @@ of the inexperience with the language.
 ================================================================
 Level 2 - Print & Find - Start
 Estimated Time	03 00
-Plan for this level: Once the class with the database was created and handled, this level would be simpler. So the plan
-for this level was to create the methods within the class FoodDatabase "food_db.rb" to perform the commands. Another was to
-change the menu to receive more complex commands.
+Plan for this level: *** I already sent a copy with the information on thins level ***
 
 Level 2  - Print & Find - Complete
-Actual Time	02 00
-The development of this level was very much easier and faster than the previous levels. I believe that was because of two reasons:
-The assignments for this level was simplier compared to the construction of the previous one. And, the knowledge upon the language
-increased a lot more compared to when I've begun coding the project.
+Actual Time	2 30
+Lessons learned, problems encountered, obstacles overcome, etc.
 
 ================================================================
 Level 3 - Database Update - Start
-Estimated Time	HH MM
-Plan for this level:
+Estimated Time	4 30
+Plan for this level: Update the class FoodDatabase with the functions necessary to reach the level's goals.
+Update the menu with more complex commands using space or comma.
 
 Level 3 - Database Update  - Complete
-Actual Time	HH MM
-Lessons learned, problems encountered, obstacles overcome, etc.
+Actual Time	3 30
+The development of coding has became easier and more comfortable once the first obstacles were overcame throughout.
+the first two levels. Most of my previous work could be reused or adapted to reach the goals of this level.
 
 ================================================================
 Level 4 - Logging Foods - Start
@@ -60,6 +58,6 @@ Lessons learned, problems encountered, obstacles overcome, etc.
 
 ================================================================
 Overall Summary
-Estimated Total Time	HH MM
-Actual Total Time	HH MM
+Estimated Total Time	12 30
+Actual Total Time	18 00
 Project reflection:

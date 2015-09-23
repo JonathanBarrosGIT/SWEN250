@@ -21,6 +21,7 @@ class Recipe
 
   #Loop iterating to return the total calories based on the ingredients of the recipe
   def printFullCalories
+    @fullCalories = 0
     @ingredients.each_index do |i|
       subArray = @ingredients[i]
       subArray.each_index do |j|
@@ -32,11 +33,42 @@ class Recipe
     @fullCalories
   end
 
+  #Method created to print the ingredients as another format, which is required in the method method "save"
+  def printIngredientsToSave
+
+    newArray = Array.new(0)
+
+    @ingredients.each_index do |i|
+      subArray = @ingredients[i]
+      subArray.each_index do |j|
+        #This if assures that it will be printed only one time per sub-array
+        if String(j) == "0"
+
+          #It verifies the multiple ingredient
+          #If the ingredient is multiple, then the algorithm stores as many as necessary in the array
+          if (@ingredients[i][j+2]) > 1
+            num = @ingredients[i][j+2]
+            k = 0
+            for k in (1..num)
+              newArray << @ingredients[i][0]
+            end
+          else
+            #Otherwise, it stores it normally
+            newArray << @ingredients[i][0]
+
+          end
+        end
+      end
+    end
+
+    return newArray.join(',')
+  end
+
   def printIngredients
     @ingredients.each_index do |i|
       subArray = @ingredients[i]
       subArray.each_index do |j|
-        #This if assures that it will be printed only one time per subarray
+        #This if assures that it will be printed only one time per sub-array
         if String(j) == "0"
           #It verifies the multiple ingredient
           if @ingredients[i][j+2] == 2
@@ -51,5 +83,4 @@ class Recipe
     end
     print "\n"
   end
-  # End of the Recipe class #
-end
+end # End of the Recipe class #
