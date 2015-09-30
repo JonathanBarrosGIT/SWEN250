@@ -37,16 +37,19 @@ class FoodDatabase
     puts 'The database file was updated'
     @updated = 0
   end
+  #----------------------------------------------#
 
   #This method add the food into the internal database
   def addFood(theFoodToBeAdded)
     @food_list << theFoodToBeAdded
   end
+  #----------------------------------------------#
 
   #This method add the recipe into the internal database
   def addRecipe(theRecipeToBeAdded)
     recipe_list << theRecipeToBeAdded
   end
+  #----------------------------------------------#
 
   #This method returns the amount of calories upon the food's name
   def getCalories(foodName)
@@ -56,6 +59,7 @@ class FoodDatabase
       end
     end
   end
+  #----------------------------------------------#
 
   def newFood(name,calories)
     count = 0
@@ -73,10 +77,11 @@ class FoodDatabase
       puts 'There is already a food in the database with the given name. Try again!'
     end
   end
+  #----------------------------------------------#
 
   def newRecipe(name,ingredients)
     ingredients.each do |value|
-      if(lookByName(value) == 0)
+      if(!lookByName(value))
         puts "The ingredient: " + "#{value}" + " is not in the database. The program cannot add the given recipe into the database."
         return 0
       end
@@ -102,16 +107,23 @@ class FoodDatabase
     @updated += 1
 
   end # End of method addRecipe
+  #----------------------------------------------#
 
-  # Method created in order to just the check the name within the database
+  # Method created in order to just check the name within the database
   def lookByName(name)
     @food_list.each do |value|
       if value.name == name
-        return 1
+        return true
       end
     end
-    return 0
+    @recipe_list.each do |value|
+      if value.name == name
+        return true
+      end
+    end
+    return false
   end
+  #----------------------------------------------#
 
   #This method look for the given name within the two lists (food and recipes) and print their information if found.
   def printByName(name)
@@ -136,6 +148,7 @@ class FoodDatabase
       puts 'There is no such food or recipe in the database'
     end
   end
+  #----------------------------------------------#
 
   # Class very similar to the previous one once the output is exactly the same.
   # However, this class looks for the prefix in the beginning of either food or recipe
@@ -160,6 +173,7 @@ class FoodDatabase
       puts 'There is no such food or recipe in the database'
     end
   end
+  #----------------------------------------------#
 
   def to_s
     @food_list.each do |value|

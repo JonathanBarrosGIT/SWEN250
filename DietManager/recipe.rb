@@ -25,7 +25,7 @@ class Recipe
     @ingredients.each_index do |i|
       subArray = @ingredients[i]
       subArray.each_index do |j|
-        if String(j) == "1"
+        if String(j) == '1'
           @fullCalories += @ingredients[i][j] * @ingredients[i][j+1]
         end
       end
@@ -42,7 +42,7 @@ class Recipe
       subArray = @ingredients[i]
       subArray.each_index do |j|
         #This if assures that it will be printed only one time per sub-array
-        if String(j) == "0"
+        if String(j) == '0'
 
           #It verifies the multiple ingredient
           #If the ingredient is multiple, then the algorithm stores as many as necessary in the array
@@ -69,14 +69,14 @@ class Recipe
       subArray = @ingredients[i]
       subArray.each_index do |j|
         #This if assures that it will be printed only one time per sub-array
-        if String(j) == "0"
+        if String(j) == '0'
           #It verifies the multiple ingredient
           if @ingredients[i][j+2] == 2
             #If the ingredient is multiple, the algorithm below prints in the required way
-            puts "  " + "#{@ingredients[i][j]}" + " (" + "#{@ingredients[i][j+2]}" +") " + "#{@ingredients[i][j+1] * @ingredients[i][j+2]}"
+            puts '  ' + "#{@ingredients[i][j]}" + ' (' + "#{@ingredients[i][j+2]}" +') ' + "#{@ingredients[i][j+1] * @ingredients[i][j+2]}"
           else
             #Otherwise, it prints normally
-            puts "  " + "#{@ingredients[i][j]}" + " " + "#{@ingredients[i][j+1]}"
+            puts '  ' + "#{@ingredients[i][j]}" + ' ' + "#{@ingredients[i][j+1]}"
           end
         end
       end

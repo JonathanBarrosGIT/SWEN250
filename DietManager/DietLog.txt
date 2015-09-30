@@ -1,0 +1,8 @@
+1995-01-10,Ham
+1999-10-13,Egg
+2001-07-15,Cheese
+2010-01-01,Jelly
+2010-02-01,Jelly
+2015-09-29,Ham and Cheese Sandwich
+2015-09-30,Orange
+1990-01-01,Orange

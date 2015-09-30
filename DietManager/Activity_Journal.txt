@@ -21,11 +21,16 @@ of the inexperience with the language.
 ================================================================
 Level 2 - Print & Find - Start
 Estimated Time	03 00
-Plan for this level: *** I already sent a copy with the information on thins level ***
+Plan for this level: Once the class with the database was created and handled, this level would be simpler. So
+the plan for this level was to create the methods within the class FoodDatabase "food_db.rb" to perform the
+commands. Another point was to change the menu in order to receive more complex commands.
 
 Level 2  - Print & Find - Complete
-Actual Time	2 30
-Lessons learned, problems encountered, obstacles overcome, etc.
+Actual Time	2 00
+THe development of this level was very much easier and faster than the previous level. I believe that was because of
+two reasons: The assignment for this level is simpler compared to the construction of the previous one. Also, the
+knowledge upon the programming language increased a lot more compared to when I've begun coding the project.
+
 
 ================================================================
 Level 3 - Database Update - Start
@@ -40,12 +45,14 @@ the first two levels. Most of my previous work could be reused or adapted to rea
 
 ================================================================
 Level 4 - Logging Foods - Start
-Estimated Time	HH MM
-Plan for this level:
+Estimated Time	5 00
+Plan for this level: Create the log object containing name and date. Also, create a class to handle the operations
+related to the log.
 
 Level 4 - Logging Foods - Complete
-Actual Time	HH MM
-Lessons learned, problems encountered, obstacles overcome, etc.
+Actual Time	4 30
+I could learn a basic of how to handle Date type using the Ruby library 'Date'. The management of time was better than
+previous versions. It could be done quicker, but learning how to handle the Date time took some time.
 
 ================================================================
 Level 5 - Show & Delete - Start
@@ -58,6 +65,6 @@ Lessons learned, problems encountered, obstacles overcome, etc.
 
 ================================================================
 Overall Summary
-Estimated Total Time	12 30
-Actual Total Time	18 00
+Estimated Total Time	17 30
+Actual Total Time	22 00
 Project reflection:
