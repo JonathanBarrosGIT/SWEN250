@@ -62,6 +62,9 @@ class EventStatistics
 	# Create a method to return the name of the winner
 	def getWinner()
 
+		#TODO
+		#I was trying to sort by the longest element and just return the first element:
+
 
 		#@contestants.each do |key,value|
 			#winnerName = key
