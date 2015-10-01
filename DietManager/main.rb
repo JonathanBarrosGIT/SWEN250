@@ -63,7 +63,7 @@ class Main
         onlyDate = nameAndDate[1].split('/')  
         # Once separated in the operation ago, now the program calls the object method 'addLog' and passes the numbers as
         # arguments.
-        logObject.addLog(dataBaseObject,nameAndDate[0],Date.new(onlyDate[2].to_i,onlyDate[1].to_i,onlyDate[0].to_i))
+        logObject.addLog(dataBaseObject,nameAndDate[0],Date.new(onlyDate[2].to_i,onlyDate[0].to_i,onlyDate[1].to_i))
       end
     elsif(command[0] == 'new')
       if(command[1] == 'food')
