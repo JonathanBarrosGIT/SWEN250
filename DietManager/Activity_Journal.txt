@@ -56,15 +56,23 @@ previous versions. It could be done quicker, but learning how to handle the Date
 
 ================================================================
 Level 5 - Show & Delete - Start
-Estimated Time	HH MM
-Plan for this level:
+Estimated Time	3 00
+Plan for this level: Based on the previous steps, this level is only a complementary part of previous work. So the plan
+was to create the methods to go through the database already created and print the information according to what was
+required or delete.
+
 
 Level 5 - Show & Delete - Complete
-Actual Time	HH MM
-Lessons learned, problems encountered, obstacles overcome, etc.
-
+Actual Time	01 30
+I am confident in saying that this was the easiest level of them all. That's because of all the time spent in the project and
+all the knowledge obtained throughout the entire process. This said, the delete is the easiest method on this step, I only had to make
+sure that only one element was deleted. And the show method took a bit longer but it wasn't a problem to develop once the whole program
+was well known at this point.
 ================================================================
 Overall Summary
-Estimated Total Time	17 30
-Actual Total Time	22 00
-Project reflection:
+Estimated Total Time	20 30
+Actual Total Time	23 30
+Project reflection: In the beginning, I underestimated the complexity of the project and I didn't manage well the time, but once the
+work was flowing well, each level became easier and easier. In the final you can see that it's not a very complicated project but it requires
+a good knowledge on different structures and nuances of the language. After about 2 weeks working on the project, I gained a good amount of
+knowledge on the language and this is very good if we think that 2 weeks ago I knew nothing of Ruby.

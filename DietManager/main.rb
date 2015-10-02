@@ -21,6 +21,8 @@ class Main
   puts "log 'name,date'                                  - Register a log of 'name' into the database log at the given date"
   puts 'save                                             - Save the current changes into the Data Base File'
   puts 'show all                                         - Print all the log records'
+  puts 'show                                             - Print all the log recorded today'
+  puts 'show date                                        - Print all the log records at the given date'
   puts 'quit                                             - Exit the program'
 
   dataBaseObject = FoodDatabase.new
@@ -32,39 +34,45 @@ class Main
     input = $stdin.gets.chomp
     command = input.split(/ +/)
 
-    #puts command
-
     if(command[0] == 'print')
       if (command[1] == 'all')
         dataBaseObject.to_s
       else
         command.delete_at(0)
         name = command.join(' ')
-        #string.gsub!(/[^a-zA-Z\s]/, '')
-        #puts string
         dataBaseObject.printByName(name)
       end
     elsif(command[0] == 'show')
       if(command[1] == 'all')
         logObject.showAll
+      # In case the user types only 'show'
+      elsif(command[1] == nil)
+        logObject.show(Date.today)
+      # In case the user types 'show date'
+      else
+        #Converting the String within the index 1 of the array into an array of 3 numbers (month,day and year)
+        date = command[1].split('/')
+        logObject.show(Date.new(date[2].to_i,date[0].to_i,date[1].to_i))
       end
     elsif(command[0] == 'log')
       command.delete_at(0)
 
-      nameAndDate = command.join(' ')
-      nameAndDate = nameAndDate.split(',')
+      nameAndDate = command.join(' ') # Array into String
+      nameAndDate = nameAndDate.split(',')  # String into Array
 
-      # If nill, it means no date givem, then the program add a log with the date of today:
       if(nameAndDate[1] == nil)
         logObject.addLog(dataBaseObject,nameAndDate[0],Date.today)
-      # Otherwise, it performs the following operations:
       else
-        # Here the program separates the date and put them into an array of 3 numbers
-        onlyDate = nameAndDate[1].split('/')  
-        # Once separated in the operation ago, now the program calls the object method 'addLog' and passes the numbers as
-        # arguments.
+        onlyDate = nameAndDate[1].split('/')
         logObject.addLog(dataBaseObject,nameAndDate[0],Date.new(onlyDate[2].to_i,onlyDate[0].to_i,onlyDate[1].to_i))
       end
+    elsif(command[0] == 'delete')
+      command.delete_at(0)
+      nameAndDate = command.join(' ') # Array into String
+      nameAndDate = nameAndDate.split(',') # String into Array
+      onlyDate = nameAndDate[1].split('/') # String into Array
+      logObject.delete(nameAndDate[0],Date.new(onlyDate[2].to_i,onlyDate[0].to_i,onlyDate[1].to_i))
+
     elsif(command[0] == 'new')
       if(command[1] == 'food')
         command.delete_at(0) # Deleting the word 'new' from the array
