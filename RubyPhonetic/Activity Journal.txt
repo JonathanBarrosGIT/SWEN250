@@ -1,0 +1,24 @@
+
+SWEN-250 Activity Reflection
+Ruby - Phonetic
+ 
+Name: Jonathan Correia de Barros
+ 
+================================================================
+Start
+Estimated Time 2 00
+Plan:
+After understanding what the assignment required, the goal was to handle the iterations through the arrays and
+print the answer as the required format.
+ 
+Complete
+Actual Time    1 30
+Observations:
+I could learn new array techniques such as Array.first and Array.last in order to use the map (It was perfect because
+in this case the sub-array only contains 2 data (first and last). And I also learn the 'kind_of?' method in order to
+assure the Data type of certain object, that was good to receive either String or Array as argument.
+ 
+ 
+================================================================
+ 
+ 
