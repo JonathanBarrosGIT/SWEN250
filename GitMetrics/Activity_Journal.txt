@@ -1,0 +1,22 @@
+SWEN-250 Activity Reflection
+Ruby - Git Repository Metrics
+
+Name: Jonathan Correia de Barros
+
+================================================================
+Start
+Estimated Time	2 00
+Plan:
+All the 3 methods are pretty similar, once developed the first, the following ones would be easy. The idea was
+simply go through the array and look for sub-strings inside each line according to what the pattern presented in the
+provided files, and then count the occurrences.
+
+Complete
+Actual Time	3 40
+Observations: I could practice a bit more the Date type. Also, how to handle sub-strings inside Strings. There wasn't
+any big issue in doing this assignment, it only took a bit longer than expected to get the pattern and apply it to
+the code. And about 1 hour was spent working on the tests making some arrangements.
+
+
+================================================================
+
