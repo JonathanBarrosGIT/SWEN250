@@ -1,0 +1,21 @@
+SWEN-250 Activity Reflection
+Ruby - Baseball-2
+
+Name: Jonathan Correia de Barros
+
+================================================================
+Start
+Estimated Time	2 00
+Plan:
+I have previous knowledge in SQL, but only dealing with basic statements.
+So my plan was nothing else but developing each requirement by time, testing it before going to the next.
+
+
+Complete
+Actual Time	3 00
+Observations: Besides my previous knowledge in SQL, I had to do a good research on some functions and statements such as LIKE, BETWEEN, JOIN.
+I would say that the assignment was challenging enouh considering the class focus so far.
+
+
+================================================================
+
