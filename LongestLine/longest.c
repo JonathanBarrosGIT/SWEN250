@@ -1,8 +1,7 @@
-/*
+/**
  * Jonathan Correia de Barros
- * Oct 11 2015
- * Testing pull
- */
+ * 
+ * /
 
 #include <stdlib.h>
 #include <stdio.h>
