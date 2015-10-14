@@ -1,17 +1,17 @@
 SWEN-250 Activity Reflection
 
-Name:
+Name: Jonathan Correia de Barros
 
 ================================================================
 Start
-Estimated Time	HH MM
-Plan:
-(Order of implementation, testing approach, etc.)
+Estimated Time	00 40
+Plan: Simple loop iterating every 20 and applying the convertion formula.
 
 Complete
-Actual Time	HH MM
-Observations:
-(Lessons learned, problems encountered, obstacles overcome, etc.)
+Actual Time	00 13
+Observations: Everything went nice and smoothy.
+
+Compile attempts: 3 (For some how, the formula from the activity page didn't work. So I was trying to discover what was wrong.)
 
 
 ================================================================
