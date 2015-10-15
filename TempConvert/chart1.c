@@ -9,12 +9,17 @@ int main()
 {
 	int celsius;
 	int fahrenheit = 0;
-	printf("Fahrenheit -> Celsius\n");
+	
+	printf("Fahrenheit - Celsius\n");
 
 	for(fahrenheit; fahrenheit <= 300 ; fahrenheit += 20)
 	{
 		celsius = (5 * (fahrenheit - 32)) / 9;
-		printf("%d -> %d\n", fahrenheit, celsius);
+
+		printf("    ");
+		printf("%-3d",fahrenheit);
+		printf("        ");
+		printf("%-3d\n", celsius);
 	}
 	return 0;
 }
