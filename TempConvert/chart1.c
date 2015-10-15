@@ -10,7 +10,7 @@ int main()
 	int celsius;
 	int fahrenheit = 0;
 	
-	printf("Fahrenheit - Celsius\n");
+	printf("Fahrenheit-Celsius\n");
 
 	for(fahrenheit; fahrenheit <= 300 ; fahrenheit += 20)
 	{
@@ -18,7 +18,7 @@ int main()
 
 		printf("    ");
 		printf("%-3d",fahrenheit);
-		printf("        ");
+		printf("      ");
 		printf("%-3d\n", celsius);
 	}
 	return 0;
