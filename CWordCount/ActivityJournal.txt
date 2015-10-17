@@ -1,0 +1,19 @@
+SWEN-250 Activity Reflection
+C Word Count
+
+Name: Jonathan Correia de Barros
+
+================================================================
+Start
+Estimated Time	3 00
+Plan:
+The plan was going through the file and every loop, increment the char counter. For the words I used the boolean conditions to assure
+the word increment only once per word. And for the new lines, it was just to look for the character '\n'.
+
+Complete
+Actual Time	2 20
+Observations: The handling of the characters is pretty tricky, so I spent a significant amount of time struggling with the logic.
+Compile Attempts: 18
+
+
+================================================================
