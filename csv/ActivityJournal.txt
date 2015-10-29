@@ -1,0 +1,19 @@
+SWEN-250 Activity Reflection
+
+Name: Jonathan Correia de Barros
+Activity: CSV Parser
+
+================================================================
+Start
+Estimated Time	2 00
+Plan:
+(Order of implementation, testing approach, etc.)
+
+Complete
+Actual Time	5 00
+Observations:
+It was pretty complicated to understand the instructions, I don't know if it is valid only for me once English is not my mother tongue. However, after reading the instructions over and over and looking up online, I could get some ideas and finish it.
+
+I had a serious problem with the Makefile, I was trying to make it and I didn't have any success. Thus, when trying it, the file csv.c was erased somehow and I lost all my work, so I had to do everything again.
+
+================================================================
