@@ -1,0 +1,17 @@
+SWEN-250 Activity Reflection
+
+Name: Jonathan Correia de Barros
+
+================================================================
+Start
+Estimated Time	2 00
+Plan:
+The instructions were very clear, I just needed to take a look the Bubble Sort theory and how it really works.
+
+Complete
+Actual Time	00 30 + 00 30(Working on the Makefile)
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+================================================================
