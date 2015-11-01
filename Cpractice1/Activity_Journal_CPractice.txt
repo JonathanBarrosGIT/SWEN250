@@ -1,0 +1,9 @@
+SWEN-250 Activity Journal
+C (no pointers) Practice Practicum
+
+Name: Jonathan Correia de Barros
+
+Estimated Time: 50min
+Actual Time: 35 min
+
+I would say that the Practice was a bit challenging but doable in less than 1 hour; however, I got previous experience, I don't know if this practice would be in a fair level for people who started programming in C about 3 weeks ago.
