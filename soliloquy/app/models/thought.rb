@@ -4,5 +4,8 @@ class Thought < ActiveRecord::Base
   belongs_to :thinker
   has_many :thumbs
 
-  # TODO: Validate that a thought must be unique, and between 5 and 154 characters
+  # Level #1 Input Validation(1):
+  validates :thought, length: {minimum: 5, maximum: 154}
+  validates :thought, uniqueness: true
+
 end
