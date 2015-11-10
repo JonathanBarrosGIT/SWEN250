@@ -16,8 +16,9 @@ class ThoughtsController < ApplicationController
   	  #Show all thoughts with at least one thumb, sorted by number of thumbs descendingly
       @thoughts = Thought.joins(:thumbs).group(:thought).order("count(*) DESC")
     when 'mine'
-      #TODO Load the active thinker's thoughts. Active thinker is in @active_thinker
-      @thoughts = []
+      #Level 2 Adding Query:
+      #Load the active thinker's thoughts. Active thinker is in @active_thinker
+      @thoughts = Thought.where(thinker_id: @active_thinker.id)
     else
       @thoughts = Thought.all
     end
