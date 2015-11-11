@@ -19,7 +19,10 @@
 
 		<a href="/thoughts/<%=thought.id%>/"><h2><%= thought.thought %></h2></a>
 
-		<footer class="text-right h3">— <%= link_to thought.thinker.name, thought.thinker %></footer>
+		<footer class="text-right h3">— <%= link_to thought.thinker.name, thought.thinker %>
+          </br>
+          <p> <%= thought.updated_at.month%>/<%=thought.updated_at.day%>/<%=thought.updated_at.year %></p>
+        </footer>
 
 		<div class="text-right">
 			<%= form_tag("thoughts/thumbup") do %>

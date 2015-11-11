@@ -11,16 +11,16 @@ class ThoughtsController < ApplicationController
 	  case session[:show]
     when 'following'
       # Do a join across thinker
-      @thoughts = Thought.joins(thinker: :followed).where(follows: {:follower_id => @active_thinker.id})
+      @thoughts = Thought.joins(thinker: :followed).where(follows: {:follower_id => @active_thinker.id}).order(updated_at: :desc)
     when 'popular'
   	  #Show all thoughts with at least one thumb, sorted by number of thumbs descendingly
       @thoughts = Thought.joins(:thumbs).group(:thought).order("count(*) DESC")
     when 'mine'
       #Level 2 Adding Query:
       #Load the active thinker's thoughts. Active thinker is in @active_thinker
-      @thoughts = Thought.where(thinker_id: @active_thinker.id)
+      @thoughts = Thought.where(thinker_id: @active_thinker.id).order(updated_at: :desc)
     else
-      @thoughts = Thought.all
+      @thoughts = Thought.all.order(updated_at: :desc)
     end
 
     respond_to do |format|
