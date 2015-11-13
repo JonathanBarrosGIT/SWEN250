@@ -1,0 +1,24 @@
+What is the name of the image file that shows the icon in the browser's tab?
+=> File name: "/favicon.png?v=5"
+=> File Path: app/views/layouts/application.html.erb:
+
+The footer of each page has some information about Glyphicons and some other stuff. Which file(s) is that written in?
+=> File name: application.html.erb
+=> File path: app/views/layouts/application.html.erb
+
+What is the exact hex value for background of thoughts boxes on the front page?
+=> Color hex value: #EEE
+=> File name: application.css
+
+Suppose I wanted to change my database back end from Sqlite to a more scalable product like PostgreSQL. How would I go about that change?
+=> Let's consider the change to PostgreSQL:
+   First of all, you need to install the specific database. In this case, you need to install the PostgreSQL and go through the pos-installation steps.
+   Then, in the file "config/database.yml" you need to change fields such as "adapter", "database", "encoding" and "username".
+   Inside the Gemfile, you need to change the content of field 'gem' from 'sqlite3' to 'pg' and run the bundle command to install this gem.
+   After these steps, run the command "rake db:create:all" to create the database.
+   To export all information from SQLite3 to PostgreSQL, you may want to use the ruby gem called "taps", so you install the taps by the command "gem install taps".
+   In order to use the taps, following is an example of how to use it:
+        Terminal:
+        taps
+        taps server sqlite://db/development.sqlite3 username secret
+        taps pull postgres://username@localhost/development http://username:secret@localhost:5000
