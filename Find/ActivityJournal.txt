@@ -4,14 +4,15 @@ Name:
 
 ================================================================
 Start
-Estimated Time	HH MM
+Estimated Time	3 00
 Plan:
-(Order of implementation, testing approach, etc.)
+After look upon the activity description, which is pretty simple. All I needed to do was to use the previous class and activities as base to complete this one. Pointers are
+quite similar to Arrays in terms of handling, but with its specific situations. So everything I needed to do was to thinking as Array handling but adapting to Pointers.
 
 Complete
-Actual Time	HH MM
+Actual Time	1 30
 Observations:
-(Lessons learned, problems encountered, obstacles overcome, etc.)
+After done 80% of the job, I realized that I was doing wrong. I was treating the Pointers as Arrays to much, so I have to figure out a way to deal with it differently. In the end, everything has worked well.
 
 
 ================================================================
